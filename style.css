@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: "Delius", cursive;
+}
+
+body {
+    width: 100%;
+    height: max-content;
+
+}
+
+/* start nav style  */
+nav {
+    width: 100%;
+    height: 60px;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(252, 30%, 10%);
+    color: aliceblue;
+    font-family: "Delius", cursive;
+}
+
+.links{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+.links a{
+    
+    color: white;
+    text-decoration: none;
+    justify-content: space-between;
+}
+
+/* end nav style  */
+
+
+
+
+.section1 {
+    width: 100%;
+    /* height: 75vh; */
+    background-color: hsl(252, 30%, 10%);
+    color: aliceblue;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+}
+
+.left-side {
+    width: 20%;
+    height: 60vh;
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-left: 25px;
+    background-color: hsla(254, 30%, 17%, 0.885);
+}
+
+.search-bar {
+    all: unset;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+}
+
+.search-bar input{
+    all: unset;
+    width: 200px;
+}
+.left-side button{
+    all: unset;
+    width: 40px;
+    /* padding: 5px; */
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+}
+
+
+#map {
+    height: 60vh;
+    width: 50%;
+    /* margin: auto; */
+    margin-bottom: 10px;
+    /* /* padding: 10px; */
+    border-radius: 10px; 
+    background-color: hsla(254, 30%, 17%, 0.885);
+}
+
+
+
+.right-side {
+    width: 20%;
+    height: 60vh;
+    align-content: center;
+    border-radius: 10px;
+    background-color: hsla(254, 30%, 17%, 0.885);
+}
+
+
+
+
+
+.section2 {
+    width: 100%;
+    height: 60vh;
+    background-color: hsl(252, 30%, 10%);
+    color: aliceblue;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+
+}
+
+.section2 .Chart {
+    width: 95%;
+    height: 90%;
+    padding: 10px;
+    margin: auto;
+    border-radius: 10px;
+    background-color: hsla(254, 30%, 17%, 0.885);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
