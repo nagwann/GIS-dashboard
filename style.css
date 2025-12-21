@@ -25,22 +25,27 @@ nav {
     font-family: "Delius", cursive;
 }
 
-.links{
+.icon {
+    display: none; 
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+
+.links {
     width: 500px;
     display: flex;
     justify-content: space-between;
 }
-.links a{
-    
+
+.links a {
+
     color: white;
     text-decoration: none;
     justify-content: space-between;
 }
 
 /* end nav style  */
-
-
-
 
 .section1 {
     width: 100%;
@@ -69,13 +74,13 @@ nav {
     color: black;
 }
 
-.search-bar input{
+.search-bar input {
     all: unset;
     width: 200px;
 }
 
 .left-side .Chart {
-margin-top: 50px;
+    margin-top: 50px;
 }
 
 #map {
@@ -84,10 +89,9 @@ margin-top: 50px;
     /* margin: auto; */
     margin-bottom: 10px;
     /* /* padding: 10px; */
-    border-radius: 10px; 
+    border-radius: 10px;
     background-color: hsla(254, 30%, 17%, 0.885);
 }
-
 
 
 .right-side {
@@ -97,9 +101,6 @@ margin-top: 50px;
     border-radius: 10px;
     background-color: hsla(254, 30%, 17%, 0.885);
 }
-
-
-
 
 
 .section2 {
@@ -123,4 +124,152 @@ margin-top: 50px;
     align-items: center;
     display: flex;
     justify-content: center;
+}
+
+
+
+/*/////////////////  Media Queries  //////////////////*/
+
+
+@media screen and (min-width: 601px) and (max-width: 992px) {
+
+    .section1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 10px;
+        height: auto;
+    }
+
+
+    .left-side {
+        width: 30%;
+        height: 50vh;
+        display: block;
+        order: 1;
+    }
+
+    .left-side .Chart {
+        margin: auto;
+    }
+
+    .search-bar input {
+        all: unset;
+        width: 180px;
+    }
+
+
+    #map {
+        width: 63%;
+        height: 50vh;
+        order: 2;
+        margin-left: 2%;
+    }
+
+    .right-side {
+        display: none;
+    }
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+
+    .section1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 10px;
+        height: auto;
+    }
+
+    #map {
+        width: 100%;
+        height: 300px;
+        order: 1;
+        margin-bottom: 15px;
+    }
+
+    .left-side {
+        width: 48%;
+        height: auto;
+        min-height: 200px;
+        order: 2;
+        display: block;
+    }
+
+    .right-side {
+        width: 48%;
+        height: auto;
+        min-height: 200px;
+        order: 3;
+        display: block;
+    }
+    .search-bar {
+        width: 95%;
+        margin: auto;
+        margin-left: 15px;
+    }
+
+    .search-bar input {
+        width: 85%;
+        font-size: 0.8rem;
+
+    }
+
+    .search-bar i {
+        display: none;
+
+    }
+
+
+    .section2 {
+        height: 40vh;
+    }
+
+}
+
+
+
+
+/* Navbar Responsive Style*/
+
+
+@media screen and (max-width: 992px) {
+    
+  
+    .icon {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 18px;
+    }
+
+ 
+    .links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px; 
+        left: 0;
+        background-color: hsl(252, 30%, 10%);
+        padding: 20px 0;
+        text-align: center;
+        z-index: 9999; 
+        border-bottom: 2px solid hsla(254, 30%, 17%, 0.885);
+    }
+
+    .links a {
+        display: block;
+        margin: 15px 0;
+        font-size: 1.2rem;
+    }
+
+
+    .links.active {
+        display: flex;
+    }
 }
