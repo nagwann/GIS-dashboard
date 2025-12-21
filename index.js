@@ -15,8 +15,13 @@ const darkBase = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}
     maxZoom: 19
 }).addTo(map);
 
+//  Navbar Toggle Logic
+const toggleBtn = document.querySelector('.icon');
+const navLinks = document.querySelector('.links');
 
-
+toggleBtn.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
 
 // Filter
 function filterTemples() {
