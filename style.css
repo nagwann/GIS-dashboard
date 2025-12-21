@@ -132,7 +132,7 @@ nav {
 /*/////////////////  Media Queries  //////////////////*/
 
 
-@media screen and (min-width: 601px) and (max-width: 992px) {
+@media screen and (min-width: 751px) and (max-width: 992px) {
 
     .links {
     
