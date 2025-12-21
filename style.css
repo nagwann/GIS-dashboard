@@ -130,7 +130,6 @@ nav {
 
 /*/////////////////  Media Queries  //////////////////*/
 
-
 @media screen and (min-width: 601px) and (max-width: 992px) {
 
     .section1 {
@@ -142,9 +141,8 @@ nav {
         height: auto;
     }
 
-
     .left-side {
-        width: 30%;
+        width: 35%; 
         height: 50vh;
         display: block;
         order: 1;
@@ -152,13 +150,19 @@ nav {
 
     .left-side .Chart {
         margin: auto;
+        width: 100%; 
+    }
+
+    .search-bar {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
     }
 
     .search-bar input {
         all: unset;
-        width: 180px;
+        width: 100%;
     }
-
 
     #map {
         width: 63%;
@@ -171,7 +175,6 @@ nav {
         display: none;
     }
 }
-
 
 
 
@@ -195,9 +198,10 @@ nav {
     .left-side {
         width: 48%;
         height: auto;
-        min-height: 200px;
+        min-height: 200px; 
         order: 2;
         display: block;
+        padding-bottom: 10px;
     }
 
     .right-side {
@@ -207,49 +211,45 @@ nav {
         order: 3;
         display: block;
     }
+    
     .search-bar {
-        width: 95%;
-        margin: auto;
-        margin-left: 15px;
+        width: 90%; 
+        margin: 5px auto;
+        display: flex;
+        justify-content: center;
     }
 
     .search-bar input {
-        width: 85%;
+        width: 100%;
         font-size: 0.8rem;
-
+        text-align: center;
     }
 
     .search-bar i {
         display: none;
-
     }
-
 
     .section2 {
-        height: 40vh;
+        height: auto;
+        min-height: 40vh;
+        padding-bottom: 20px;
     }
-
 }
 
 
 
-
-/* Navbar Responsive Style*/
-
-
 @media screen and (max-width: 992px) {
     
-  
     .icon {
         display: block;
         position: absolute;
         right: 20px;
         top: 18px;
+        color: white; 
     }
 
- 
     .links {
-        display: none;
+        display: none; 
         flex-direction: column;
         width: 100%;
         position: absolute;
@@ -267,7 +267,6 @@ nav {
         margin: 15px 0;
         font-size: 1.2rem;
     }
-
 
     .links.active {
         display: flex;
