@@ -36,6 +36,7 @@ nav {
     width: 500px;
     display: flex;
     justify-content: space-between;
+   margin-right: 400px;
 }
 
 .links a {
@@ -130,7 +131,13 @@ nav {
 
 /*/////////////////  Media Queries  //////////////////*/
 
+
 @media screen and (min-width: 601px) and (max-width: 992px) {
+
+    .links {
+    
+   margin-right: 0px;
+}
 
     .section1 {
         display: flex;
@@ -141,8 +148,9 @@ nav {
         height: auto;
     }
 
+
     .left-side {
-        width: 35%; 
+        width: 30%;
         height: 50vh;
         display: block;
         order: 1;
@@ -150,19 +158,13 @@ nav {
 
     .left-side .Chart {
         margin: auto;
-        width: 100%; 
-    }
-
-    .search-bar {
-        width: 90%;
-        margin: 0 auto;
-        display: flex;
     }
 
     .search-bar input {
         all: unset;
-        width: 100%;
+        width: 180px;
     }
+
 
     #map {
         width: 63%;
@@ -178,7 +180,14 @@ nav {
 
 
 
+
 @media screen and (max-width: 600px) {
+
+
+        .links {
+    
+   margin-right: 0px;
+}
 
     .section1 {
         display: flex;
@@ -198,10 +207,9 @@ nav {
     .left-side {
         width: 48%;
         height: auto;
-        min-height: 200px; 
+        min-height: 200px;
         order: 2;
         display: block;
-        padding-bottom: 10px;
     }
 
     .right-side {
@@ -211,45 +219,49 @@ nav {
         order: 3;
         display: block;
     }
-    
     .search-bar {
-        width: 90%; 
-        margin: 5px auto;
-        display: flex;
-        justify-content: center;
+        width: 95%;
+        margin: auto;
+        margin-left: 15px;
     }
 
     .search-bar input {
-        width: 100%;
+        width: 85%;
         font-size: 0.8rem;
-        text-align: center;
+
     }
 
     .search-bar i {
         display: none;
+
     }
 
+
     .section2 {
-        height: auto;
-        min-height: 40vh;
-        padding-bottom: 20px;
+        height: 40vh;
     }
+
 }
 
 
 
+
+/* Navbar Responsive Style*/
+
+
 @media screen and (max-width: 992px) {
     
+  
     .icon {
         display: block;
         position: absolute;
         right: 20px;
         top: 18px;
-        color: white; 
     }
 
+ 
     .links {
-        display: none; 
+        display: none;
         flex-direction: column;
         width: 100%;
         position: absolute;
@@ -267,6 +279,7 @@ nav {
         margin: 15px 0;
         font-size: 1.2rem;
     }
+
 
     .links.active {
         display: flex;
